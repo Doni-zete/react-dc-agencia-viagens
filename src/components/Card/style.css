@@ -1,0 +1,42 @@
+#card {
+ display: flex;
+ flex-direction: column;
+ width: 33%;
+ padding: 70px 30px;
+ cursor: pointer;
+}
+#card:hover {
+ background-color: #feb633;
+ transition: all 1s;
+}
+
+#card h4 {
+ font-size: 1.3rem;
+ margin-bottom: 5px;
+}
+
+#card p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.card-claro{
+    color: #32333a;
+}
+
+.card-claro p{
+    color: #8a8fa3;
+}
+
+.primeiro-paragrafo{
+    margin-bottom: 5px;
+}
+.primeiro-segundo{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #card {
+    width: auto;
+  }
+}
