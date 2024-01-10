@@ -1,13 +1,15 @@
 import Logo from '../../assets/logo.png'
 import IconeLua from '../../assets/moon.png'
 
+import './style.css'
+
 export default function Topo() {
  return (
-  <header>
-   <img src={Logo} alt="logoimagem" />
+  <header className="topo-modo-claro">
+   <img className="logo" src={Logo} alt="logoimagem" />
 
-   <button>
-    <img src={IconeLua} alt="iconeLua" />
+   <button className="botao-claro">
+    <img className="icone" src={IconeLua} alt="iconeLua" />
    </button>
   </header>
  )
