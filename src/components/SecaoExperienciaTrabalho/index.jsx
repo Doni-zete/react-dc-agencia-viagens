@@ -1,9 +1,10 @@
 import Card from "../Card";
+import './style.css'
 
 export default function SecaoExperienciaTrabalho() {
  return (
-  <section>
-   <div>
+  <section id="secao-ex-trabalho" className="secao-claro">
+   <div id="texto-container" className="texto-claro">
     <h2>Experiência De Trabalho</h2>
     <p>
      {' '}
@@ -13,7 +14,7 @@ export default function SecaoExperienciaTrabalho() {
     </p>
    </div>
 
-   <div>
+   <div className="conteiner-cards limitar-secao">
     <Card
      data="JUNHO 2012 - 2016"
      titulo="Web Designer"
