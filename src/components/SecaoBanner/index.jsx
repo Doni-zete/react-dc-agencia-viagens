@@ -1,9 +1,12 @@
 import './style.css'
 
-export default function SecaoBanner() {
+export default function SecaoBanner(props) {
  return (
   <section id="secaoBanner">
-   <div id="imagemDeFundo" className="fundo-modo-claro"></div>
+   <div
+    id="imagemDeFundo"
+    className={props.temaEscuro ? 'fundo-modo-escuro' : 'fundo-modo-claro'}
+   ></div>
 
    <div className="box-texto">
     <p>BRANDING / UI / UX / TECNOLOGIA</p>

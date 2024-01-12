@@ -1,10 +1,16 @@
-import Card from "../Card";
+import Card from '../Card'
 import './style.css'
 
-export default function SecaoExperienciaTrabalho() {
+export default function SecaoExperienciaTrabalho(props) {
  return (
-  <section id="secao-ex-trabalho" className="secao-claro">
-   <div id="texto-container" className="texto-claro">
+  <section
+   id="secao-ex-trabalho"
+   className={props.temaEscuro ? 'secao-escuro' : 'secao-claro'}
+  >
+   <div
+    id="texto-container"
+    className={props.temaEscuro ? 'texto-escuro' : 'texto-claro'}
+   >
     <h2>Experiência De Trabalho</h2>
     <p>
      {' '}

@@ -8,9 +8,9 @@ import iconeGoogle from '../../assets/google-plus.png'
 
 import './style.css'
 
-export default function Rodape() {
+export default function Rodape(props) {
  return (
-  <footer className="rodape-claro">
+  <footer className={props.temaEscuro ? 'rodape-escuro' : 'rodape-claro'}>
    <img src={Logo} alt="logoempresa" />
 
    <p className="paragrafo">
@@ -27,7 +27,7 @@ export default function Rodape() {
     <img src={iconeGoogle} alt="icone google" />
    </div>
 
-   <p className="copyright">
+   <p className= "copyright">
     Copyright 2024 &copy;
     <a href="https://github.com/Doni-zete" target="_blank" rel="noreferrer">
      <span>Donizete Crisostomo</span>{' '}
