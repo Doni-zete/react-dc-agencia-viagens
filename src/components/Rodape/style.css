@@ -9,6 +9,10 @@ footer {
  background-color: #fff;
 }
 
+.rodape-escuro {
+ background-color: #252525;
+}
+
 .paragrafo {
  max-width: 600px;
  align-items: center;
@@ -43,6 +47,7 @@ footer {
  color: #8a8fa3;
  padding: 20px;
  text-align: center;
+ border-top: 1px solid #ffffff0d;
 }
 
 .copyright span {
@@ -51,6 +56,6 @@ footer {
 }
 
 a {
-text-decoration: none;
-padding-left: 5px;
+ text-decoration: none;
+ padding-left: 5px;
 }

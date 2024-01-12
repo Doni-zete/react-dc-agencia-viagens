@@ -3,10 +3,14 @@
  flex-direction: column;
  padding: 6.25rem 1.5rem;
  align-items: center;
- background-color: #f6f8fc;
+
 }
 .secao-claro {
  background-color: #f6f8fc;
+}
+
+.secao-escuro{
+background-color:#393838;
 }
 
 #texto-container {
@@ -46,8 +50,14 @@
 .texto-claro h2 {
  color: #32333c;
 }
+
+
 .texto-claro p {
  color: #8a8fa3;
+}
+
+.texto-escuro p{
+    color: #cccccc;
 }
 
 .conteiner-cards{

@@ -6,11 +6,10 @@
 }
 
 #imagemDeFundo {
+  width: 50%;
  background-image: url('../../assets/banner.png');
- width: 50%;
  background-repeat: no-repeat;
  background-position: center;
- background-size: cover;
  object-fit: cover;
 }
 
@@ -18,13 +17,17 @@
  background-color: #fff;
 }
 
+.fundo-modo-escuro{
+  background-color: #252525;
+}
+
 .box-texto {
- width: 50%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- padding: 0px 20px;
- background-color: #fafbfc;
+  width: 50%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafbfc;
 }
 
 .box-texto p {
