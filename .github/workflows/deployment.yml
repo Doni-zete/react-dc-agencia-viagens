@@ -1,11 +1,11 @@
-name: Push-to-EC2
+name: Push-to-LigthSail
 on:
   push:
     branches:
       - main
 jobs:
   deploy:
-    name: Deploy to EC2
+    name: Deploy to LigthSail
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the files
@@ -17,6 +17,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{secrets.Lightsail_SSH_KEY}}
           SOURCE: "./"
           REMOTE_HOST: "54.84.190.107"
-          REMOTE_USER: "Ubuntu"
-          TARGET: "/home/"
-          EXCLUDE: "/dist/, /node_modules/, **.env, rebuild_app.sh, watcher.sh"
+          REMOTE_USER: "ubuntu"
+          TARGET: "/home/ubuntu"
