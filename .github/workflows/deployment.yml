@@ -1,0 +1,22 @@
+name: Push-to-EC2
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the files
+        uses: actions/checkout@v3
+
+      - name: Copy files with SSH
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.Lightsail_SSH_KEY}}
+          SOURCE: "./"
+          REMOTE_HOST: "54.84.190.107"
+          REMOTE_USER: "Ubuntu"
+          TARGET: "/home/ubuntu"
+          EXCLUDE: "/dist/, /node_modules/, **.env, rebuild_app.sh, watcher.sh"
