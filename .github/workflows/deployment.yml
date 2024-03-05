@@ -18,5 +18,5 @@ jobs:
           SOURCE: "./"
           REMOTE_HOST: "54.84.190.107"
           REMOTE_USER: "Ubuntu"
-          TARGET: "/home/ubuntu"
+          TARGET: "/home/"
           EXCLUDE: "/dist/, /node_modules/, **.env, rebuild_app.sh, watcher.sh"
