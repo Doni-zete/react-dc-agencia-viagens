@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   deploy:
-    name: Deploy to LigthSail
+    name: Deploy to LigthSai
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the files
